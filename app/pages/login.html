@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <div class="form-container"></div>
+    <h1>Iniciar sesión</h1>
+    <p>Ingresa tus credenciales para acceder al area de autoevaluación</p>
+    <form id='login-form'>
+      <label for="user " class="sr-only">Usuario</label>
+      <input type="text" name="user" id="user" placeholder="Nombre de usuario">
+      <label for="passw" class="sr-only">Contraseña</label>
+      <input type="password" id="passw" placeholder="Contraseña">
+      <button type="submit">Iniciar sesión</button>
+      <p class="error escondido">Error al iniciar sesión</p>
+    </form>
+    <p>Si todavía no tenes cuenta, registrate aquí: <a href="/app/pages/register.html">Ingresar</a> </p>
+  </main>
+</body>
+<script src="login.js"></script>
+
+</html>

@@ -1,0 +1,80 @@
+/* sacado d https://css-pattern.com*/
+html {
+  --s: 150px; /* control the size */
+  --c1: #FF847C;
+  --c2: #E84A5F;
+  --c3: #FECEA8;
+  --c4: #99B898;
+  
+  background:
+    conic-gradient(from  45deg at 75% 75%, var(--c3) 90deg,var(--c1) 0 180deg,#0000 0),
+    conic-gradient(from -45deg at 25% 25%, var(--c3) 90deg,#0000 0),
+    conic-gradient(from -45deg at 50% 100%,#0000 180deg,var(--c3) 0),
+    conic-gradient(from -45deg,var(--c1) 90deg, var(--c2) 0 225deg,var(--c4) 0);
+  background-size: var(--s) var(--s); 
+}
+
+
+
+
+
+body {
+  /*background-color: rgb(236, 236, 96);*/
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+}
+
+.form-container {
+  width: 500px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+form+p form p{ /* form+p es el p que sigue al formulario form p es el p dentro del formulario*/
+  text-align: center
+}
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+input,
+button {
+  border-radius: 4px;
+  border: unset;
+  padding: 15px 30px;
+}
+
+button{
+  background-color: var(--c2);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.error{
+  color: #0d0002;
+  font-weight: 800;
+}
+
+.escondido{
+  display: none;
+}
